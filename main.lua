@@ -69,7 +69,7 @@ accept.Parent = frame
 accept.Size = UDim2.new(0.8,0,0,28)
 accept.Position = UDim2.new(0.1,0,0.68,0)
 accept.BackgroundColor3 = Color3.fromRGB(50,50,50)
-accept.Text = "Auto Accept"
+accept.Text = "Force Accept"
 accept.TextColor3 = Color3.new(1,1,1)
 accept.Font = Enum.Font.Gotham
 accept.TextSize = 14
@@ -104,13 +104,13 @@ ocorner.CornerRadius = UDim.new(1,0)
 
 -- FUNÇÕES BOTÕES
 freeze.MouseButton1Click:Connect(function()
-	status.Text = "Trade congelada!"
+	status.Text = "executed"
 	wait(2)
 	status.Text = ""
 end)
 
 accept.MouseButton1Click:Connect(function()
-	status.Text = "Aceitado Automaticamente!"
+	status.Text = "executed"
 	wait(2)
 	status.Text = ""
 end)
