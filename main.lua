@@ -102,18 +102,6 @@ open.Visible = false
 local ocorner = Instance.new("UICorner",open)
 ocorner.CornerRadius = UDim.new(1,0)
 
--- MARCA DAGUA
-local watermark = Instance.new("TextLabel")
-watermark.Parent = gui
-watermark.AnchorPoint = Vector2.new(0.5,0.5)
-watermark.Position = UDim2.new(0.5,0,0.5,0)
-watermark.Size = UDim2.new(0,400,0,120)
-watermark.BackgroundTransparency = 1
-watermark.Text = "Desenvolvido por:\nJm Scripts"
-watermark.TextScaled = true
-watermark.TextTransparency = 0.8
-watermark.TextColor3 = Color3.new(1,1,1)
-
 -- FUNÇÕES BOTÕES
 freeze.MouseButton1Click:Connect(function()
 	status.Text = "Trade congelada!"
